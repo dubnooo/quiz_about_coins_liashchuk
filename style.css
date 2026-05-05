@@ -1,0 +1,91 @@
+/* Базові налаштування */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(145deg, #fff199, #e6c700);
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Контейнер відповідей */
+#answers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+/* Кнопки відповідей */
+.answer-btn {
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+    border: none;
+    background-color: white;
+    color: #222;
+    font-size: 16px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Наведення */
+.answer-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Натискання */
+.answer-btn:active {
+    transform: scale(0.95);
+}
+
+.hide {
+    display: none;
+}
+
+.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+.wrong {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Кнопки старт / рестарт */
+#start-btn,
+#restart-btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #bfbfbf;
+    border: none;
+    color: white;
+    font-size: 16px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#start-btn:hover,
+#restart-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+#start-btn:active,
+#restart-btn:active {
+    transform: scale(0.95);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
